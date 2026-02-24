@@ -10,7 +10,7 @@ export default function Detail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`/api/institutes/${slug}`)
+    globalThis.fetch(`/api/institutes/${slug}`)
       .then((res) => res.json())
       .then((data) => {
         setInstitute(data);

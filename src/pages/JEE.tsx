@@ -9,7 +9,7 @@ export default function JEE() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/institutes?type=jee")
+    globalThis.fetch("/api/institutes?type=jee")
       .then((res) => res.json())
       .then((data) => {
         setInstitutes(data);

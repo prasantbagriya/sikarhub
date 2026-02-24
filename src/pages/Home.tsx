@@ -11,7 +11,7 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch("/api/institutes?featured=true")
+    globalThis.fetch("/api/institutes?featured=true")
       .then((res) => res.json())
       .then((data) => setFeatured(data));
   }, []);
