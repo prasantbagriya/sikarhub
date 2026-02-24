@@ -1,0 +1,5 @@
+{
+  "name": "Sikar Education Hub - No.1 Coaching & School Directory",
+  "description": "Comprehensive directory of schools, JEE, and NEET coaching institutes in Sikar. Find the best education for your future with verified listings and expert advice.",
+  "requestFramePermissions": ["geolocation"]
+}
