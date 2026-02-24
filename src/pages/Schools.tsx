@@ -10,7 +10,7 @@ export default function Schools() {
   const [filter, setFilter] = useState("all");
 
   useEffect(() => {
-    globalThis.fetch("/api/institutes?type=school")
+    fetch("/api/institutes?type=school")
       .then((res) => res.json())
       .then((data) => {
         setInstitutes(data);

@@ -7,7 +7,7 @@ export default function Compare() {
   const [selected, setSelected] = useState<any[]>([]);
 
   useEffect(() => {
-    globalThis.fetch("/api/institutes")
+    fetch("/api/institutes")
       .then((res) => res.json())
       .then((data) => setInstitutes(data));
   }, []);

@@ -9,7 +9,7 @@ export default function NEET() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    globalThis.fetch("/api/institutes?type=neet")
+    fetch("/api/institutes?type=neet")
       .then((res) => res.json())
       .then((data) => {
         setInstitutes(data);
