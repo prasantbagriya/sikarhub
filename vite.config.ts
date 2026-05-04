@@ -13,7 +13,18 @@ export default defineConfig(({mode}) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+        'node-fetch': path.resolve(__dirname, 'src/fetch-polyfill.js'),
+        'node-fetch/src/index.js': path.resolve(__dirname, 'src/fetch-polyfill.js'),
+        'cross-fetch': path.resolve(__dirname, 'src/fetch-polyfill.js'),
+        'isomorphic-fetch': path.resolve(__dirname, 'src/fetch-polyfill.js'),
+        'whatwg-fetch': path.resolve(__dirname, 'src/fetch-polyfill.js'),
+        'formdata-polyfill': path.resolve(__dirname, 'src/fetch-polyfill.js'),
+        'formdata-polyfill/FormData.js': path.resolve(__dirname, 'src/fetch-polyfill.js'),
+        'formdata-polyfill/esm.min.js': path.resolve(__dirname, 'src/fetch-polyfill.js'),
       },
+    },
+    optimizeDeps: {
+      exclude: ['node-fetch', 'formdata-polyfill', 'cross-fetch', 'isomorphic-fetch', 'whatwg-fetch'],
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.

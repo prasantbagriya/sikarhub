@@ -20,8 +20,9 @@ export default function JEE() {
   return (
     <>
       <Helmet>
-        <title>Best JEE Coaching in Sikar | Top IIT-JEE Institutes</title>
-        <meta name="description" content="Find the best JEE coaching in Sikar. Compare PCP Sikar, Allen, and other top institutes for IIT-JEE Main & Advanced preparation." />
+        <title>Top JEE Coaching in Sikar (2025) | IIT-JEE Main & Advanced</title>
+        <meta name="description" content="Searching for the best JEE coaching in Sikar? Compare PCP Sikar, CLC, Matrix, and Allen Sikar. Get results, faculty info, and fee details for IIT-JEE preparation." />
+        <meta name="keywords" content="Best JEE coaching Sikar, Top IIT coaching in Sikar, PCP Sikar JEE results, CLC Sikar JEE, Matrix Academy Sikar, JEE preparation Sikar" />
       </Helmet>
 
       <div className="pt-32 pb-20 bg-slate-50 min-h-screen">

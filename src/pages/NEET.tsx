@@ -20,8 +20,9 @@ export default function NEET() {
   return (
     <>
       <Helmet>
-        <title>Best NEET Coaching in Sikar | Top Medical Coaching Institutes</title>
-        <meta name="description" content="Find the best NEET coaching in Sikar. Compare PCP Sikar, CLC, and other top institutes for medical entrance preparation." />
+        <title>Best NEET Coaching in Sikar (2025) | Top Medical Institutes</title>
+        <meta name="description" content="Find the best NEET coaching in Sikar. Compare PCP Sikar, CLC, GCI, and other top medical coaching institutes. Verified results and fee structures for NEET 2025." />
+        <meta name="keywords" content="Best NEET coaching Sikar, Top medical coaching in Sikar, PCP Sikar NEET results, CLC Sikar NEET, GCI Sikar, NEET preparation Sikar" />
       </Helmet>
 
       <div className="pt-32 pb-20 bg-slate-50 min-h-screen">

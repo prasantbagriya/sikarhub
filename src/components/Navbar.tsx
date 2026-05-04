@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: "Schools", path: "/schools" },
     { name: "JEE Coaching", path: "/jee" },
     { name: "NEET Coaching", path: "/neet" },
+    { name: "Admission", path: "/admission" },
     { name: "Compare", path: "/compare" },
     { name: "Blog", path: "/blog" },
   ];

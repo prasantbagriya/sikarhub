@@ -14,6 +14,7 @@ import NEET from "./pages/NEET";
 import Detail from "./pages/Detail";
 import Compare from "./pages/Compare";
 import Enquiry from "./pages/Enquiry";
+import Admission from "./pages/Admission";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -34,6 +35,7 @@ export default function App() {
               <Route path="/institute/:slug" element={<Detail />} />
               <Route path="/compare" element={<Compare />} />
               <Route path="/enquiry" element={<Enquiry />} />
+              <Route path="/admission" element={<Admission />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />

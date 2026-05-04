@@ -45,6 +45,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li><Link to="/about" className="hover:text-indigo-400 transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-indigo-400 transition-colors">Contact Us</Link></li>
+              <li><Link to="/admission" className="hover:text-indigo-400 transition-colors">Admission Rules</Link></li>
               <li><Link to="/enquiry" className="hover:text-indigo-400 transition-colors">Admission Enquiry</Link></li>
               <li><a href="#" className="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-indigo-400 transition-colors">Terms of Service</a></li>

@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Institute } from "../types";
 import InstituteCard from "../components/InstituteCard";
+import AIAdvisor from "../components/AIAdvisor";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 export default function Home() {
   const [featured, setFeatured] = useState<Institute[]>([]);
@@ -19,8 +21,33 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Sikar EduHub | No.1 Education & Coaching Directory in Sikar</title>
-        <meta name="description" content="Discover the best schools, JEE, and NEET coaching institutes in Sikar. Verified listings for PCP Sikar, Prince Academy, and more." />
+        <title>Sikar EduHub | Best Schools & Coaching Institutes in Sikar (2025)</title>
+        <meta name="description" content="Looking for the best schools, JEE, or NEET coaching in Sikar? Sikar EduHub provides verified listings, fee structures, and reviews for Prince Academy, PCP, CLC, and more." />
+        <meta name="keywords" content="Best schools in Sikar, Top JEE coaching Sikar, NEET preparation Sikar, Prince Academy Sikar fees, PCP Sikar reviews, CLC Sikar contact, education hub Sikar" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "EducationalOrganization",
+              "name": "Sikar EduHub",
+              "url": "https://sikareduhub.com",
+              "logo": "https://sikareduhub.com/logo.png",
+              "description": "The most comprehensive directory for schools and coaching institutes in Sikar, Rajasthan.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sikar",
+                "addressRegion": "Rajasthan",
+                "postalCode": "332001",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "27.6125",
+                "longitude": "75.1397"
+              }
+            }
+          `}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -78,8 +105,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Top Featured Institutes</h2>
-              <p className="text-slate-600">Handpicked premium institutions known for their excellence in education and results.</p>
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">Top Featured Institutes in Sikar</h2>
+              <p className="text-slate-600">Handpicked premium institutions known for their excellence in education and results. Find the best <strong>CBSE schools</strong> and <strong>IIT-JEE coaching</strong> in Sikar.</p>
             </div>
             <Link to="/schools" className="flex items-center gap-2 text-indigo-600 font-bold hover:gap-3 transition-all">
               View All Listings <ArrowRight className="w-5 h-5" />
@@ -93,6 +120,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* AI Advisor Section */}
+      <ErrorBoundary>
+        <AIAdvisor />
+      </ErrorBoundary>
 
       {/* Categories */}
       <section className="py-24 bg-slate-50">
@@ -135,7 +167,7 @@ export default function Home() {
               <div className="absolute -top-10 -left-10 w-64 h-64 bg-indigo-100 rounded-full blur-3xl opacity-50"></div>
               <img
                 src="https://picsum.photos/seed/sikar/800/600"
-                alt="Sikar Education Hub"
+                alt="Sikar Education Hub - Best Schools and Coaching"
                 className="relative rounded-3xl shadow-2xl z-10"
                 referrerPolicy="no-referrer"
               />
@@ -158,14 +190,14 @@ export default function Home() {
                 <span className="text-indigo-600">Education Journey?</span>
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Sikar has emerged as the second Kota of India. With world-class coaching institutes like PCP and schools like Prince Academy, it offers a perfect environment for academic success.
+                Sikar has emerged as the <strong>second Kota of India</strong>. With world-class coaching institutes like <strong>PCP Sikar</strong>, <strong>CLC Sikar</strong>, and schools like <strong>Prince Academy</strong>, it offers a perfect environment for academic success.
               </p>
               
               <div className="space-y-6">
                 {[
-                  { title: "Top Results", desc: "Consistent top ranks in JEE, NEET, and Board exams every year." },
-                  { title: "Safe Environment", desc: "A peaceful and student-friendly city with excellent hostel facilities." },
-                  { title: "Affordable Education", desc: "Quality education at a fraction of the cost compared to other metros." },
+                  { title: "Top Results in JEE & NEET", desc: "Consistent top ranks in JEE Main, Advanced, and NEET every year from Sikar institutes." },
+                  { title: "Safe & Focused Environment", desc: "A peaceful and student-friendly city with excellent hostel facilities and discipline." },
+                  { title: "Affordable Fee Structure", desc: "Quality education at a fraction of the cost compared to Kota or other metros." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="bg-indigo-50 w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-1">
@@ -185,6 +217,29 @@ export default function Home() {
               >
                 Learn More About Sikar <ArrowRight className="w-5 h-5" />
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-slate max-w-none">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Comprehensive Guide to Education in Sikar</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Best Schools in Sikar</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Sikar boasts some of the best CBSE and RBSE schools in Rajasthan. Institutions like <strong>Prince Academy</strong>, <strong>Euro International School</strong>, and <strong>Sanskar School</strong> are known for their academic rigor and extracurricular activities. Whether you are looking for English medium schools or traditional RBSE schools, Sikar has it all.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">Top JEE & NEET Coaching</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  For competitive exams, Sikar is a powerhouse. <strong>PCP (Prince Coaching Program)</strong>, <strong>CLC (Career Line Coaching)</strong>, and <strong>Matrix Academy</strong> have consistently produced top rankers in IIT-JEE and NEET. The faculty here is highly experienced, often coming from Kota, providing the same level of expertise in a more focused environment.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -23,8 +23,9 @@ export default function Schools() {
   return (
     <>
       <Helmet>
-        <title>Best Schools in Sikar | CBSE, RBSE & English Medium Schools</title>
-        <meta name="description" content="Explore the top-rated schools in Sikar. Compare Prince Academy, Prince CBSE, and other leading schools for your child's future." />
+        <title>Best CBSE & RBSE Schools in Sikar (2025) | Fees & Reviews</title>
+        <meta name="description" content="Find the top-rated schools in Sikar. Compare Prince Academy, Prince CBSE, Euro International, and other leading schools. Get verified information on fees and facilities." />
+        <meta name="keywords" content="Best CBSE schools in Sikar, Top RBSE schools Sikar, English medium schools Sikar, Prince Academy Sikar, schools in Sikar Rajasthan" />
       </Helmet>
 
       <div className="pt-32 pb-20 bg-slate-50 min-h-screen">
